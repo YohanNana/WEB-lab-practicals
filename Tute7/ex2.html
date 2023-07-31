@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function x()
+        {
+            if(avg >= 30)
+            {
+                alert("Congrats! You passed");
+            }
+            else
+            {
+                alert("Better luck next time");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3 id="sum">SUM</h3>
+    <h3 id="avg">Average</h3>
+    <script>
+        a = parseInt(prompt("Enter first module marks"));
+        b = parseInt(prompt("Enter second module marks"));
+        d = parseInt(prompt("Enter third module marks"));
+        e = parseInt(prompt("Enter fourth module marks"));
+        f = parseInt(prompt("Enter fifth module marks"));
+
+        tot = a + b + d + e + f ;
+        average = tot / 5 ;
+        
+        document.getElementById("sum").innerHTML = "Sum is: "+tot;
+        document.getElementById("avg").innerHTML = "Average is: "+average;
+    </script>
+    <input type="button" name="grade" value="GRADE" onclick="x()">
+</body>
+</html>

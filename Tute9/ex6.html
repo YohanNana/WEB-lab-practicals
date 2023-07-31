@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display First Four Letters of Student ID</title>
+</head>
+<body>
+    <button onclick="x()">Display</button>
+    <div id="output"></div>
+
+    <script>
+        function x() {
+            const confirmed = confirm("Do you want to visit Google?");
+            if (confirmed) {
+                window.location.href = "https://www.google.com";
+            } else {
+                document.getElementById("output").innerText = "You've decided to stay.";
+            }
+        }
+    </script>
+</body>
+</html>

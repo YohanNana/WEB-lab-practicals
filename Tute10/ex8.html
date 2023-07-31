@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <label>Enter your NIC :<label>
+        <input type="text" id="nic">
+        <button onclick="x()">Birth</button>
+        <div id="output"></div>
+
+        <script>
+            function x()
+            {
+                const studentNIC = document.getElementById("nic").value;
+                const firstFourLetters = studentNIC.slice(0, 4);
+                document.getElementById("output").innerText = `Your Birth Year is: ${firstFourLetters}`;
+            }
+        </script>
+</body>
+</html>

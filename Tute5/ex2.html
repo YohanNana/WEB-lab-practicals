@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cyan;
+            color: gold;
+            background-image: url("nasa-Q1p7bh3SHj8-unsplash.jpg");
+        }
+        .box{
+            width: 400px;
+            height: 520px;
+            background-color: rgb(11, 25, 51);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        label.a{
+            background: yellow;
+            width: 400px;
+            height: 30px;
+        }
+        h1{
+            background-color: rgb(163, 139, 0);
+            color: white;
+            text-align: center;
+            padding: 10px 10px;
+            margin: 10px 10px;
+            border-radius: 4px;
+        }
+        .box2{
+            background-color: rgb(163, 139, 0);
+            color: white;
+            text-align: center;
+            padding: 10px 10px;
+            border-radius: 4px;
+        }
+        input[type="submit"]
+        {
+            padding: 5px 20px;
+            background-color: green;
+            color: white;
+            margin-left: -200px;
+            cursor: pointer;
+        }
+        input[type="reset"]
+        {
+            padding: 5px 20px;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            margin-left: -1px;
+        }
+        #confirm{
+            margin-left:-1px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+            <form action="">
+                <h1>Sign Up</h1>
+                <br>
+                First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="Enter First Name"> <br> <br>
+                Last Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="Enter Last Name"> <br> <br>
+                Date of Birth &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="date" >
+                    <option value="0">Date</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="month">
+                    <option value="0">Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">october</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <select name="year" >
+                    <option value="0">Year</option>
+                    <option value="1">2000</option>
+                    <option value="2">2001</option>
+                    <option value="3">2002</option>
+                    <option value="4">2003</option>
+                    <option value="5">2004</option>
+                    <option value="6">2005</option>
+                    <option value="7">2006</option>
+                    <option value="8">2007</option>
+                    <option value="9">2008</option>
+                    <option value="10">2009</option>
+                    <option value="11">2010</option>
+                </select> <br> <br>
+                Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="a" >Male
+                <input type="radio" name="a" >Female
+                <br> <br>
+                Country &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="country" >
+                    <option value="0">Country</option>
+                    <option value="1">Sri Lanka</option>
+                    <option value="2">India</option>
+                    <option value="3">China</option>
+                    <option value="4">Japan</option>
+                    <option value="5">USA</option>
+                </select> <br> <br>
+                E-mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="email" placeholder="Enter E-mail"> <br> <br>
+                Phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <input type="text" name="phone" placeholder="Enter phone number"> <br> <br>
+                Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" name="password" ><br> <br>
+                Confirm Password &nbsp;&nbsp;
+                <input type="password" name="password" ><br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="agree" >I Agree to the Terms of use <br>
+
+                <div class="box2">
+                    <input type="submit" value="Submit">
+                    <input type="reset" name="reset" id="reset" Value="Reset">
+                </div>
+            </form>
+        </div>
+
+    
+</body>
+</html>
